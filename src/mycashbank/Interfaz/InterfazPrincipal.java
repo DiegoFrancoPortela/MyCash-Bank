@@ -12,7 +12,7 @@ package mycashbank.Interfaz;
 public class InterfazPrincipal extends javax.swing.JFrame {
 
     /**
-     * Creates new form InterfazPrincipal
+     * Creates new form NewJFrame
      */
     public InterfazPrincipal() {
         initComponents();
@@ -28,28 +28,24 @@ public class InterfazPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabelSeparador = new javax.swing.JLabel();
         jButtonAreaClientes1 = new javax.swing.JButton();
         jButtonAreaTrabajadores1 = new javax.swing.JButton();
         jLabelIconoBanco = new javax.swing.JLabel();
+        jLabelSeparador2 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabelSeparador3 = new javax.swing.JLabel();
+        jLabelBarraLegal = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(115, 198, 182));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(115, 198, 182));
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jPanel1.setMinimumSize(new java.awt.Dimension(0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(851, 638));
-
-        jLabel1.setBackground(new java.awt.Color(60, 63, 65));
-        jLabel1.setFont(new java.awt.Font("Libel Suit Rg", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(14, 102, 85));
-        jLabel1.setText("MyCash Bank");
-        jLabel1.setMaximumSize(new java.awt.Dimension(201, 59));
-        jLabel1.setMinimumSize(new java.awt.Dimension(201, 59));
-        jLabel1.setPreferredSize(new java.awt.Dimension(201, 59));
 
         jLabelSeparador.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jLabelSeparador.setForeground(new java.awt.Color(187, 187, 187));
@@ -60,7 +56,9 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         jButtonAreaClientes1.setForeground(new java.awt.Color(11, 83, 69));
         jButtonAreaClientes1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/iconAreaCliente.png"))); // NOI18N
         jButtonAreaClientes1.setText("Area de Clientes");
-        jButtonAreaClientes1.setBorderPainted(false);
+        jButtonAreaClientes1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(11, 83, 69), 2));
+        jButtonAreaClientes1.setContentAreaFilled(false);
+        jButtonAreaClientes1.setFocusPainted(false);
         jButtonAreaClientes1.setMaximumSize(new java.awt.Dimension(215, 48));
         jButtonAreaClientes1.setMinimumSize(new java.awt.Dimension(215, 48));
         jButtonAreaClientes1.setOpaque(false);
@@ -71,7 +69,9 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         jButtonAreaTrabajadores1.setForeground(new java.awt.Color(11, 83, 69));
         jButtonAreaTrabajadores1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/iconAreaTrabajadores.png"))); // NOI18N
         jButtonAreaTrabajadores1.setText("Area de Trabajadores");
-        jButtonAreaTrabajadores1.setBorderPainted(false);
+        jButtonAreaTrabajadores1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(11, 83, 69), 2));
+        jButtonAreaTrabajadores1.setContentAreaFilled(false);
+        jButtonAreaTrabajadores1.setFocusPainted(false);
         jButtonAreaTrabajadores1.setMaximumSize(new java.awt.Dimension(271, 48));
         jButtonAreaTrabajadores1.setMinimumSize(new java.awt.Dimension(271, 48));
         jButtonAreaTrabajadores1.setOpaque(false);
@@ -80,6 +80,32 @@ public class InterfazPrincipal extends javax.swing.JFrame {
         jLabelIconoBanco.setForeground(new java.awt.Color(187, 187, 187));
         jLabelIconoBanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/icon.png"))); // NOI18N
 
+        jLabelSeparador2.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        jLabelSeparador2.setForeground(new java.awt.Color(187, 187, 187));
+        jLabelSeparador2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Separador.png"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logo.png"))); // NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/logoIcon.png"))); // NOI18N
+
+        jLabelSeparador3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        jLabelSeparador3.setForeground(new java.awt.Color(187, 187, 187));
+        jLabelSeparador3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/Separador.png"))); // NOI18N
+        jLabelSeparador3.setMaximumSize(new java.awt.Dimension(788, 5));
+        jLabelSeparador3.setMinimumSize(new java.awt.Dimension(788, 5));
+        jLabelSeparador3.setPreferredSize(new java.awt.Dimension(788, 5));
+
+        jLabelBarraLegal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/BarraLegal.png"))); // NOI18N
+        jLabelBarraLegal.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jLabelBarraLegalAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -87,37 +113,66 @@ public class InterfazPrincipal extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                                        .addContainerGap()
+                                                                        .addComponent(jLabelSeparador2))
+                                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                                        .addGap(24, 24, 24)
+                                                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                                                        .addComponent(jLabel2)
+                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                                        .addComponent(jLabelIconoBanco)
+                                                                                        .addGap(15, 15, 15))
+                                                                                .addComponent(jLabelSeparador))))
                                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addGap(12, 12, 12)
-                                                                .addComponent(jLabelSeparador))
-                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                                .addComponent(jLabelIconoBanco)
-                                                                .addGap(15, 15, 15))))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(45, 45, 45)
-                                                .addComponent(jButtonAreaClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButtonAreaTrabajadores1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(28, Short.MAX_VALUE))
+                                                                .addGap(45, 45, 45)
+                                                                .addComponent(jButtonAreaClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                .addComponent(jButtonAreaTrabajadores1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addGap(0, 0, Short.MAX_VALUE)
+                                                .addComponent(jLabelBarraLegal, javax.swing.GroupLayout.PREFERRED_SIZE, 851, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap())
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabelSeparador3, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(329, 329, 329))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel1)
+                                                .addGap(398, 398, 398))))
         );
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabelIconoBanco))
-                                .addGap(14, 14, 14)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(23, 23, 23)
+                                                .addComponent(jLabelIconoBanco)
+                                                .addGap(14, 14, 14))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(jLabel2)
+                                                .addGap(18, 18, 18)))
                                 .addComponent(jLabelSeparador)
                                 .addGap(31, 31, 31)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jButtonAreaClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jButtonAreaTrabajadores1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(448, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelSeparador3, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 230, Short.MAX_VALUE)
+                                .addComponent(jLabelBarraLegal)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelSeparador2)
+                                .addGap(21, 21, 21))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -135,6 +190,10 @@ public class InterfazPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>
+
+    private void jLabelBarraLegalAncestorAdded(javax.swing.event.AncestorEvent evt) {
+
+    }
 
     /**
      * @param args the command line arguments
@@ -162,6 +221,7 @@ public class InterfazPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(InterfazPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -175,8 +235,12 @@ public class InterfazPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAreaClientes1;
     private javax.swing.JButton jButtonAreaTrabajadores1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelBarraLegal;
     private javax.swing.JLabel jLabelIconoBanco;
     private javax.swing.JLabel jLabelSeparador;
+    private javax.swing.JLabel jLabelSeparador2;
+    private javax.swing.JLabel jLabelSeparador3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration
 }
